@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Alejandro Rivera website gives you an broad insight of the projects I have worked, my background and technologies I have worked with.">
+    <meta name="keywords" content="HTML,CSS,jquery,JavaScript,AWS">
+    <meta name="author" content="Alejandro Rivera">
+    <link rel="icon" href="img/arrow.png">
+    <link rel="canonical" href="http://www.alejandro-rivera.com/" />
+    <link rel='stylesheet' href='css/styles.css'/>
+    <link rel='stylesheet' href='css/navbar.css'/>
+    <link rel='stylesheet' href='css/academic.css'/>
+    <link rel='stylesheet' href='css/skills.css'/>
+    <link rel='stylesheet' href='css/welcome.css'/>
+    <link rel='stylesheet' href='css/portfolio.css'/>
+    <link rel='stylesheet' href='css/contact.css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <title>Alejandro Rivera</title>
+  </head>
+  <body>
+    <div class='page'>
+      
+        <nav class="navbar">
+            <a href="./index.html" class="navbar-brand"><img class="nav-logo" src="./img/arrow.png" alt="Logo"> </a>
+          <ul>
+              <li><a href="#" onclick="showContent('display-1','welcome')">Welcome</a></li>
+              <li><a href="#" onclick="showContent('display-2','academic')">Academic</a></li>
+              <li><a href="#" onclick="showContent('display-3','portfolio')">Portfolio</a></li>
+              <li><a href="#" onclick="showContent('display-4','skills')">Skills</a></li>
+              <li><a href="#" onclick="showContent('display-5','contact')">Contact</a></li>
+           </ul><button class="navbar-toggler"><span></span></button>
+         </nav>
+                
+          <div class="section content" id="display-0" name="Home">
+            <img class="main-logo" src="./img/arrow.png" alt="Logo">
+            <noscript>Sorry, Your browser does not support JavaScript or was disable by user!</noscript>
+          </div>
+          <div class="section content" id="display-1" name="Welcome"   role="tabpanel"></div>
+          <div class="section content" id="display-2" name="Academic"  role="tabpanel"></div>
+          <div class="section content" id="display-3" name="Portfolio" role="tabpanel"></div>
+          <div class="section content" id="display-4" name="Skills"    role="tabpanel"></div>
+          <div class="section content" id="display-5" name="Contact"   role="tabpanel"></div>
+          <!---------------------- Footer ---------------------->
+          <div class='section footer'>© 2019 Copyright:
+            <a href="http://alejandro-rivera.com" target="_blank">alejandro-rivera.com</a></div>
+            
+         </div>
+       
+      <script src="js/javaScript.js"></script>
+      <script src="js/navbar.js"></script>
+  </body>
+</html>

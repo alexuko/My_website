@@ -1,0 +1,178 @@
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Kurale', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Carrois Gothic', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Lato', sans-serif; 
+font-family: 'Nunito', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Special Elite', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Orbitron|Special+Elite|Carrois+Gothic|Didact+Gothic|Lato|Nanum+Gothic|Open+Sans|Oxygen|Kurale|Montserrat|Raleway|Roboto+Mono|Source+Code+Pro');
+@-ms-viewport{
+  width: device-width;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: whitesmoke;
+    letter-spacing: 1px;
+  }
+
+  .page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 100vh;
+  
+  }
+  
+  .section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .content {
+    background-color: #111010;;
+    padding: 0px;
+  }
+  .display{
+    background-color: rgb(72, 212, 72);
+  }
+
+  .footer {
+    background-color: black;/*  For browsers that do not support gradients */
+    background-image: -webkit-gradient(linear, left top, right top, from(#151618), to(#111010));
+    background-image: -webkit-linear-gradient(left, #151618, #111010);
+    background-image: -o-linear-gradient(left, #151618, #111010);
+    background-image: linear-gradient(90deg, #151618, #111010);/*   Standard syntax (must be last) */
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 7px 0px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 5px;
+  }
+  div.footer>a{
+    text-decoration: none;
+    color: rgba(48, 120, 181, 0.83);
+    margin-left: 10px;
+    letter-spacing: 5px;
+  }
+
+  div.footer>a:hover{
+    color: whitesmoke;
+  }
+
+  .main-logo{
+    width: 100vh;
+    height: 90vh;
+    margin: 0px auto;
+    padding: 5%;
+  }
+
+
+
+  h4{
+    color: #656565;
+    font-variant-caps: small-caps;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+  }
+
+  h5 strong{
+    color: #656565;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+  article p{
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 1.0em;
+    font-family: 'Oxygen', sans-serif;
+  }
+  
+
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 425px) {
+    body{
+      /* background-color: red; */
+      background-color: #151618;
+      background-image: -webkit-gradient(linear, left top, right top, from(#151618), to(#111010));
+      background-image: -webkit-linear-gradient(left, #151618, #111010);
+      background-image: -o-linear-gradient(left, #151618, #111010);
+      background-image: linear-gradient(90deg, #151618, #111010);    
+    }
+    .main-logo{
+      width: 100vw;
+    }
+
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 426px) and (max-width: 768px) {
+    body{
+      /* background-color: blue; */
+      background-color: #151618;
+      background-image: -webkit-gradient(linear, left top, right top, from(#151618), to(#111010));
+      background-image: -webkit-linear-gradient(left, #151618, #111010);
+      background-image: -o-linear-gradient(left, #151618, #111010);
+      background-image: linear-gradient(90deg, #151618, #111010);    
+    }
+
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 769px) {
+    body{
+      /* background-color: yellow; */
+      background-color: #151618;
+      background-image: -webkit-gradient(linear, left top, right top, from(#151618), to(#111010));
+      background-image: -webkit-linear-gradient(left, #151618, #111010);
+      background-image: -o-linear-gradient(left, #151618, #111010);
+      background-image: linear-gradient(90deg, #151618, #111010);    
+    }
+    
+    .page {
+      margin: 0 auto;
+    }
+    
+   .content {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+    }
+    .footer {
+
+      -webkit-box-ordinal-group: 3;
+
+          -ms-flex-order: 2;
+
+              order: 2;
+    }
+
+  }

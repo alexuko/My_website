@@ -1,0 +1,126 @@
+
+/* ------------------Academic section------------------ */
+.first, .second, .third{
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* --------------- collapsible ---------------- */
+
+.collapsible {
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 25px 25px;
+  min-height: 40px;
+  max-height: 3000px;
+  overflow: hidden;
+  margin: 20px 0px 0px;
+  border: 3px solid #007fff;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.collapsible * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.active{
+  /* transition: all 0.3s ease-out; */
+  border-radius: 25px 25px 0px 0px;
+}
+.active, .collapsible:hover {
+   background-color: rgba(255, 255, 255, 0.05);
+   border: rgb(255, 255, 255) solid 2px;
+   font-weight: bold;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: gray;
+  font-weight: bold;
+  float: right;
+  margin-left: 10px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.collapsible-content {
+  width: 100%;
+  padding: 0px 10px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease-out;
+  -o-transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-out;
+  background-color: transparent;
+  border: none;   
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+.collapsible-content.showing{
+  border: 2px solid white;
+  border-top: none;
+   
+
+}
+.small-image{
+  width: 100%;
+  height: auto;
+  max-width: 380px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+article {
+  margin: 10px 0;
+  text-align: left;
+}
+a.site {
+  text-decoration: none;
+  color: #007fff;
+  text-transform: lowercase;
+}
+
+
+ /* Mobile Styles */
+ @media only screen and (max-width: 425px) {
+   .first{
+     padding-top: 90px;
+   }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .first{
+    padding-top: 90px;
+  }
+
+ 
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 769px) {
+  .first, .second, .third, .fourth{
+    width: 33.33%;
+    padding-top: 90px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .studies{
+    padding: 3% 3% ;
+    
+  }
+  
+}

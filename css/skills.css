@@ -1,0 +1,89 @@
+.skills-container{
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #100e0e;
+    -webkit-box-shadow: 2px 2px 8px 4px black;
+            box-shadow: 2px 2px 8px 4px black;
+
+}
+.skills-container h1{
+    color: ivory;
+    text-transform: uppercase;
+    font-size: 1.2em;
+
+}
+.skillBox{
+    margin: 20px 0;
+}
+.skillBox p{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8em;
+}
+
+p.psnl-skills{
+    text-transform: capitalize;
+    
+
+}
+.skillBox p.percent{
+    float: right;
+    position: relative;
+    top: -36px;
+  
+}
+.skill{
+    padding: 4px;
+    border: 1px solid #0fffb7;
+    border-radius: 14px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.skill_level{
+    background-color: #007fff;
+    width: 100%;
+    height: 11px;
+    border-radius: 15px;
+
+}
+ /* Mobile Styles */
+ @media only screen and (max-width: 425px) {
+    .professional-skills{
+        padding-top: 80px;
+    }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .professional-skills,
+    .personal-skills{
+      width: 50%;
+      padding-top: 80px;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+    }
+ 
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 769px) {
+  .professional-skills,
+  .personal-skills{
+    width: 50%;
+    padding-top: 80px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .my-skills{
+      padding: 3%;
+  }
+  
+}

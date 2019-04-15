@@ -1,0 +1,131 @@
+.photo{
+    background-color: #151618;
+    text-align: right;
+    font-size: 1.0em;
+
+}
+    .illustration{
+        height: 100%;                               
+        width: 100%;
+        border: 7px solid #151618;
+        -webkit-box-shadow: 0 0 20px 5px black;
+                box-shadow: 0 0 20px 5px black;
+        margin: 20px 0;
+    }
+    
+    .info{
+        background-color: #111010;
+    }
+    .welcome h3{
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 5px;
+    }
+    .welcome p{
+        color: #ffffff;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+    span.surname{
+        color: #747282e8;
+    }
+
+.media{
+    background-color: black;/*  For browsers that do not support gradients */
+    background-image: -webkit-gradient(linear, left top, right top, from(#151618), to(#111010));
+    background-image: -webkit-linear-gradient(left, #151618, #111010);
+    background-image: -o-linear-gradient(left, #151618, #111010);
+    background-image: linear-gradient(90deg, #151618, #111010);/*   Standard syntax (must be last) */
+    padding: 10px 7px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.icon{
+    width: 51px;
+    height: 53px;
+    border-radius: 7px;
+    margin: 10px 35px;
+    padding: 25px;
+}
+
+.icon:hover{
+    -webkit-filter: drop-shadow(2px 2px 3px grey);
+    filter: drop-shadow(2px 2px 3px grey);
+}
+    
+    #facebook{
+        background: url(../img/screenshot-1.png) -16px -19px;
+    }
+
+    #github{
+        background: url(../img/screenshot-1.png) -6013px -4051px;
+    }   
+   
+    #linkedin{
+        background: url(../img/screenshot-1.png) -219px -83px;
+    }   
+    #mail{
+        background: url(../img/screenshot-1.png) -424px 69px;
+    }
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 425px) {
+.photo{
+    padding: 95px 10% 10%;
+}
+.info{
+    padding: 7%;
+}
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .photo{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+                padding: 15% 3% 3%;
+    }
+    .welcome{
+        -ms-flex-flow: nowrap;
+            flex-flow: nowrap;
+    }
+    .info{
+        padding: 15% 3% 3%;
+        overflow: auto;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 769px) {
+    .photo{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 10% 5%;
+    }
+    .welcome{
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+        height: auto;
+        width: 100vw;
+    }  
+    .info{
+    padding: 15% 3% 5%;
+    }
+    .illustration{
+        max-width: 75%;
+    }
+}
