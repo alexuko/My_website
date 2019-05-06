@@ -1,0 +1,22 @@
+{
+  "name": "my_website_repo",
+  "version": "1.0.0",
+  "description": "my website alejandro-rivera.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexuko/My_website.git"
+  },
+  "author": "Alejandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexuko/My_website/issues"
+  },
+  "homepage": "https://github.com/alexuko/My_website#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

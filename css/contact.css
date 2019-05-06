@@ -19,6 +19,11 @@ input,textarea{
     font-family: 'Special Elite', cursive;
     font-size: 0.8em;
 }
+input:focus,
+textarea:focus{
+    
+    border: 2px solid white;
+}
 
 .btnContact{
     font-size: 1.0em;

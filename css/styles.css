@@ -110,7 +110,7 @@ font-family: 'Special Elite', cursive;
   }
   article p{
     color: #ffffff;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 1.0em;
     font-family: 'Oxygen', sans-serif;
   }
